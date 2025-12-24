@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: flutter-web
+    volumes:
+      - ./web:/usr/share/nginx/html
+    restart: always
